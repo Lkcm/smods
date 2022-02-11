@@ -1,0 +1,95 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  EnderCorePlugin (EnderCore-1.12.2-0.5.41.jar)
+  ForgelinPlugin (Forgelin-1.7.4.jar)
+Contact their authors BEFORE contacting forge
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 11/02/22 21:14
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need any: have missing
+
+Missing Mods:
+	unknown : need any: have missing
+
+net.minecraftforge.fml.common.MultipleModsErrored
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:300)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1350210984 bytes (1287 MB) / 1812987904 bytes (1729 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 2 total; -Xmx6G -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2859 40 mods loaded, 40 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                                | Version           | Source                                          | Signature                                |
+	|:----- |:--------------------------------- |:----------------- |:----------------------------------------------- |:---------------------------------------- |
+	| L     | minecraft                         | 1.12.2            | minecraft.jar                                   | None                                     |
+	| L     | mcp                               | 9.42              | minecraft.jar                                   | None                                     |
+	| L     | FML                               | 8.0.99.99         | forge-1.12.2-14.23.5.2859.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | forge                             | 14.23.5.2859      | forge-1.12.2-14.23.5.2859.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | appliedenergistics2               | rv6-stable-3      | appliedenergistics2-rv6-stable-3.jar            | None                                     |
+	| L     | codechickenlib                    | 3.2.2.353         | CodeChickenLib-1.12.2-3.2.2.353-universal.jar   | None                                     |
+	| L     | cofhcore                          | 4.6.1             | CoFHCore-1.12.2-4.6.1.22-universal.jar          | None                                     |
+	| L     | cofhworld                         | 1.3.0             | CoFHWorld-1.12.2-1.3.0.6-universal.jar          | None                                     |
+	| L     | endercore                         | 1.12.2-0.5.41     | EnderCore-1.12.2-0.5.41.jar                     | None                                     |
+	| L     | enderio                           | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiobase                       | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderioconduits                   | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderioconduitsappliedenergistics | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderioconduitsopencomputers      | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderioconduitsrefinedstorage     | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiointegrationforestry        | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiointegrationtic             | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiointegrationticlate         | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiomachines                   | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | enderiopowertools                 | 5.0.36            | EnderIO-1.12.2-5.0.36.jar                       | None                                     |
+	| L     | forgelin                          | 1.7.4             | Forgelin-1.7.4.jar                              | None                                     |
+	| L     | ic2                               | 2.8.101-ex112     | industrialcraft-2-2.8.101-ex112.jar             | None                                     |
+	| L     | industrialforegoing               | 1.12.2-1.12.2     | industrialforegoing-1.12.2-1.11.5-215.jar       | None                                     |
+	| L     | jei                               | 4.13.1.220        | jei_1.12.2-4.13.1.220.jar                       | None                                     |
+	| L     | journeymap                        | 1.12.2-5.5.2      | journeymap-1.12.2-5.5.2.jar                     | None                                     |
+	| L     | jmfixer                           | 1                 | JourneyMapFixer-1.12.2-1-SERVER.jar             | None                                     |
+	| L     | mekanism                          | 1.12.2-9.4.13.349 | Mekanism-1.12.2-9.4.13.349.jar                  | None                                     |
+	| L     | mekanismgenerators                | 9.4.11            | MekanismGenerators-1.12.2-9.4.13.349.jar        | None                                     |
+	| L     | redstoneflux                      | 2.1.0             | RedstoneFlux-1.12-2.1.0.6-universal.jar         | None                                     |
+	| L     | storagedrawers                    | 1.12-5.3.5        | StorageDrawers-1.12.2-5.3.7.jar                 | None                                     |
+	| L     | storagedrawersextra               | @VERSION@         | StorageDrawersExtras-1.12-3.1.0.jar             | None                                     |
+	| L     | teslacorelib                      | 1.0.15            | tesla-core-lib-1.12.2-1.0.15.jar                | None                                     |
+	| L     | teslacorelib_registries           | 1.0.15            | tesla-core-lib-1.12.2-1.0.15.jar                | None                                     |
+	| L     | thermalcultivation                | 0.3.1             | ThermalCultivation-1.12.2-0.3.1.8-universal.jar | None                                     |
+	| L     | thermaldynamics                   | 2.5.3             | ThermalDynamics-1.12.2-2.5.3.16-universal.jar   | None                                     |
+	| L     | thermalexpansion                  | 5.5.2             | ThermalExpansion-1.12.2-5.5.2.39-universal.jar  | None                                     |
+	| L     | thermalfoundation                 | 2.6.1             | ThermalFoundation-1.12.2-2.6.1.22-universal.jar | None                                     |
+	| L     | thermalinnovation                 | 0.3.1             | ThermalInnovation-1.12.2-0.3.1.8-universal.jar  | None                                     |
+	| L     | unidict                           | 1.12.2-2.9.1      | UniDict-1.12.2-2.9.1.jar                        | None                                     |
+	| L     | wanionlib                         | 1.12.2-1.5        | WanionLib-1.12.2-1.5.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+EnderCorePlugin (EnderCore-1.12.2-0.5.41.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+  com.enderio.core.common.transform.SimpleMixinPatcher
+ForgelinPlugin (Forgelin-1.7.4.jar)
+  
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

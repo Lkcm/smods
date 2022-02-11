@@ -1,0 +1,65 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 11/02/22 21:00
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need [4.6.0,4.7.0): have missing
+
+Missing Mods:
+	unknown : need [3.2.2,): have missing
+	unknown : need [4.6.0,4.7.0): have missing
+
+Missing Mods:
+	unknown : need [3.1.7,): have missing
+	unknown : need [4.6.0,4.7.0): have missing
+
+Missing Mods:
+	unknown : need [4.6.0,4.7.0): have missing
+	unknown : need [1.2.0,2.0.0): have missing
+
+Missing Mods:
+	unknown : need [4.6.0,4.7.0): have missing
+
+net.minecraftforge.fml.common.MultipleModsErrored
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:300)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1171513464 bytes (1117 MB) / 1324875776 bytes (1263 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 2 total; -Xmx6G -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2859 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                 | Version      | Source                                          | Signature                                |
+	|:----- |:------------------ |:------------ |:----------------------------------------------- |:---------------------------------------- |
+	| L     | minecraft          | 1.12.2       | minecraft.jar                                   | None                                     |
+	| L     | mcp                | 9.42         | minecraft.jar                                   | None                                     |
+	| L     | FML                | 8.0.99.99    | forge-1.12.2-14.23.5.2859.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | forge              | 14.23.5.2859 | forge-1.12.2-14.23.5.2859.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | thermalcultivation | 0.3.1        | ThermalCultivation-1.12.2-0.3.1.8-universal.jar | None                                     |
+	| L     | thermaldynamics    | 2.5.3        | ThermalDynamics-1.12.2-2.5.3.16-universal.jar   | None                                     |
+	| L     | thermalexpansion   | 5.5.2        | ThermalExpansion-1.12.2-5.5.2.39-universal.jar  | None                                     |
+	| L     | thermalfoundation  | 2.6.1        | ThermalFoundation-1.12.2-2.6.1.22-universal.jar | None                                     |
+	| L     | thermalinnovation  | 0.3.1        | ThermalInnovation-1.12.2-0.3.1.8-universal.jar  | None                                     |
+
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
