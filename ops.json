@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "aed49b53-e14c-394c-9ea0-ba69eac86fd6",
+    "name": "lkcm",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
